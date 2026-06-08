@@ -1,0 +1,2837 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Siti Salsabila Muthmainnah · HR & Administration Specialist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Premium Color Palette */
+            --primary-dark: #0f3a7d;
+            /* Deep professional blue */
+            --primary-main: #1230AE;
+            /* Rich blue */
+            --primary-light: #2a5cdb;
+            /* Lighter blue */
+            --accent-purple: #6C48C5;
+            /* Elegant purple */
+            --accent-light: #C68FE6;
+            /* Soft lavender */
+            --accent-pale: #e8ddf5;
+            /* Pale lavender */
+
+            /* Backgrounds */
+            --bg-primary: #ffffff;
+            /* Clean white */
+            --bg-secondary: #f8f6ff;
+            /* Soft purple-white */
+            --bg-tertiary: #fafbff;
+            /* Subtle blue-white */
+
+            /* Text Colors */
+            --text-primary: #1a1a2e;
+            /* Dark text */
+            --text-secondary: #4a4a6a;
+            /* Medium text */
+            --text-light: #6a6a8a;
+            /* Light text */
+
+            /* Effects */
+            --shadow-xs: 0 2px 8px rgba(0, 0, 0, 0.04);
+            --shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.15);
+            --border-color: rgba(18, 48, 174, 0.08);
+            --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        /* Navigation — Professional & Clean */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+            animation: slideDown 0.5s ease-out;
+            box-shadow: var(--shadow-sm);
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-main) 50%, var(--accent-purple) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 4px 12px rgba(18, 48, 174, 0.2));
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 32px;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--primary-main), var(--accent-purple));
+            transition: 0.3s ease;
+            border-radius: 1px;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-main);
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 2.5px;
+            background: var(--text-primary);
+            margin: 4px 0;
+            transition: var(--transition);
+            border-radius: 3px;
+        }
+
+        /* Hero Section — Modern & Sophisticated */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 70px;
+            position: relative;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+            z-index: 2;
+            width: 100%;
+        }
+
+        .hero-text {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        .hero-title {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1.15;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+            letter-spacing: -1px;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: var(--accent-purple);
+            margin-bottom: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.9;
+        }
+
+        .hero-role {
+            font-size: 16px;
+            color: var(--text-light);
+            margin-bottom: 24px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-description {
+            font-size: 16px;
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            max-width: 520px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+            margin-bottom: 50px;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .stat-number {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary-main);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .btn {
+            padding: 13px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            letter-spacing: 0.3px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary-main));
+            color: white;
+            box-shadow: 0 4px 16px rgba(18, 48, 174, 0.25);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(18, 48, 174, 0.35);
+        }
+
+        .btn-secondary {
+            background: var(--bg-secondary);
+            color: var(--primary-main);
+            border: 1.5px solid var(--accent-purple);
+            box-shadow: var(--shadow-xs);
+        }
+
+        .btn-secondary:hover {
+            background: var(--accent-pale);
+            border-color: var(--primary-main);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .profile-image {
+            width: 320px;
+            height: 380px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: none;
+            box-shadow: var(--shadow-lg);
+            transition: var(--transition);
+            animation: fadeInRight 0.8s ease-out 0.2s both;
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .profile-image:hover {
+            box-shadow: 0 20px 40px rgba(18, 48, 174, 0.2);
+            transform: translateY(-8px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            animation: bounce 2.5s infinite;
+        }
+
+        .scroll-indicator span {
+            color: var(--accent-purple);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .mouse {
+            width: 26px;
+            height: 42px;
+            border: 2px solid var(--accent-purple);
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .mouse::after {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 3px;
+            height: 8px;
+            background: var(--accent-purple);
+            border-radius: 2px;
+            animation: scroll 1.5s infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateX(-50%) translateY(14px);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateX(-50%) translateY(0);
+            }
+
+            50% {
+                transform: translateX(-50%) translateY(-8px);
+            }
+        }
+
+        /* Sections — Clean & Spacious */
+        section {
+            padding: 100px 0;
+            position: relative;
+            background: var(--bg-primary);
+        }
+
+        section:nth-child(odd) {
+            background: var(--bg-secondary);
+        }
+
+        .section-title {
+            font-size: 48px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+        }
+
+        /* About Section */
+        .about-text p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .about-description {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+
+        .about-description .highlight {
+            color: var(--primary-main);
+            font-weight: 600;
+            background: linear-gradient(120deg, rgba(18, 48, 174, 0.08) 0%, rgba(18, 48, 174, 0.02) 100%);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        /* Competencies Section */
+        .competencies-box {
+            background: var(--bg-primary);
+            border-radius: 12px;
+            padding: 28px;
+            margin: 28px 0;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-xs);
+        }
+
+        .competencies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+        }
+
+        .competency-item {
+            display: flex;
+            gap: 12px;
+            padding: 16px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+        }
+
+        .competency-item:hover {
+            border-color: var(--accent-purple);
+            background: #f8f6ff;
+            transform: translateY(-2px);
+        }
+
+        .competency-icon {
+            color: var(--primary-main);
+            font-size: 24px;
+            min-width: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .competency-text strong {
+            display: block;
+            color: var(--primary-main);
+            margin-bottom: 4px;
+            font-size: 0.95rem;
+        }
+
+        .competency-text p {
+            color: var(--text-light);
+            font-size: 0.85rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        /* Final Project Section */
+        .final-project-section {
+            background: linear-gradient(135deg, #f0f4ff 0%, #f5f0fa 50%, #fefbff 100%);
+            border-radius: 16px;
+            padding: 28px;
+            margin-top: 24px;
+            border: 2px solid rgba(18, 48, 174, 0.1);
+            box-shadow: 0 4px 16px rgba(108, 72, 197, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .final-project-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(18, 48, 174, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .final-project-section>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        .final-project-title {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, var(--primary-main), var(--accent-purple));
+            color: white;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        .final-project-title i {
+            font-size: 16px;
+        }
+
+        .final-project-content {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--accent-purple);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .final-project-content h5 {
+            color: var(--primary-main);
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            line-height: 1.4;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .final-project-content h5 i {
+            color: var(--accent-purple);
+            margin-top: 2px;
+            flex-shrink: 0;
+        }
+
+        .final-project-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin: 0;
+            padding-left: 26px;
+            font-style: italic;
+        }
+
+        .focus-areas-heading {
+            color: var(--primary-main);
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 20px 0 12px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .focus-areas-heading i {
+            color: var(--accent-purple);
+        }
+
+        .focus-areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 12px;
+        }
+
+        .focus-item {
+            background: linear-gradient(135deg, rgba(18, 48, 174, 0.02), rgba(108, 72, 197, 0.03));
+            border: 1.5px solid rgba(108, 72, 197, 0.15);
+            border-radius: 10px;
+            padding: 14px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            transition: var(--transition);
+        }
+
+        .focus-item:hover {
+            border-color: var(--accent-purple);
+            background: linear-gradient(135deg, rgba(18, 48, 174, 0.04), rgba(108, 72, 197, 0.08));
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(108, 72, 197, 0.12);
+        }
+
+        .focus-item i {
+            color: var(--primary-main);
+            font-size: 20px;
+            min-width: 24px;
+            text-align: center;
+            margin-top: 2px;
+        }
+
+        .focus-item-text {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            font-weight: 500;
+            line-height: 1.3;
+            margin: 0;
+        }
+
+        /* Certification Highlights */
+        .cert-highlights {
+            background: linear-gradient(135deg, rgba(18, 48, 174, 0.03), rgba(108, 72, 197, 0.05));
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid var(--border-color);
+        }
+
+        .cert-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .cert-list li {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            padding: 8px 0 8px 12px;
+            border-left: 3px solid var(--accent-purple);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .cert-list li i {
+            color: var(--primary-main);
+            min-width: 20px;
+            text-align: center;
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 28px 20px;
+            background: var(--bg-primary);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            box-shadow: var(--shadow-xs);
+        }
+
+        .stat:hover {
+            transform: translateY(-6px);
+            border-color: var(--accent-light);
+            box-shadow: var(--shadow-md);
+            background: linear-gradient(135deg, var(--bg-primary), var(--bg-secondary));
+        }
+
+        .stat h3 {
+            font-size: 36px;
+            color: var(--primary-main);
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .stat p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .about-image {
+            width: 280px;
+            height: 340px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: none;
+            box-shadow: var(--shadow-lg);
+            margin-top: 40px;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .contact-chips {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .contact-chip {
+            background: var(--bg-secondary);
+            padding: 10px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 1px solid var(--border-color);
+            text-align: center;
+            justify-content: center;
+        }
+
+        .contact-chip:hover {
+            background: var(--accent-pale);
+            border-color: var(--accent-purple);
+            color: var(--primary-main);
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 28px;
+        }
+
+        .skill-card {
+            background: var(--bg-primary);
+            padding: 36px 24px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+            transition: var(--transition);
+            box-shadow: var(--shadow-xs);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-purple);
+            box-shadow: var(--shadow-lg);
+            background: linear-gradient(135deg, #fafbff, #f8f6ff);
+        }
+
+        .skill-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .skill-card h3 {
+            color: var(--primary-main);
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .skill-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+        }
+
+        .project-card {
+            background: var(--bg-primary);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            box-shadow: var(--shadow-xs);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--accent-purple);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .project-image {
+            height: 220px;
+            overflow: hidden;
+            background: var(--bg-secondary);
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+
+        .project-content {
+            padding: 24px;
+        }
+
+        .project-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--primary-main);
+            font-weight: 700;
+        }
+
+        .project-content p {
+            color: var(--text-secondary);
+            margin-bottom: 14px;
+            font-size: 0.95rem;
+        }
+
+        .tag {
+            background: var(--accent-pale);
+            color: var(--accent-purple);
+            border: none;
+            padding: 6px 14px;
+            border-radius: 40px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        /* Timeline — Professional */
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--primary-main), var(--accent-purple));
+            border-radius: 1px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 48px;
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .timeline-marker {
+            position: absolute;
+            left: -16px;
+            top: 8px;
+            width: 16px;
+            height: 16px;
+            background: white;
+            border: 3px solid var(--accent-purple);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px rgba(108, 72, 197, 0.1);
+            z-index: 2;
+        }
+
+        .timeline-content {
+            background: var(--bg-primary);
+            border-radius: 12px;
+            padding: 24px 28px;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            box-shadow: var(--shadow-xs);
+        }
+
+        .timeline-content:hover {
+            border-color: var(--accent-purple);
+            box-shadow: var(--shadow-md);
+            transform: translateX(4px);
+        }
+
+        .timeline-content h3 {
+            font-size: 1.2rem;
+            margin-bottom: 6px;
+            color: var(--primary-main);
+            font-weight: 700;
+        }
+
+        .company {
+            color: var(--accent-purple);
+            font-weight: 500;
+            margin-bottom: 4px;
+            font-size: 0.95rem;
+        }
+
+        .period {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .timeline-content p {
+            color: var(--text-secondary);
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+
+        .timeline-content p strong {
+            color: var(--primary-main);
+            font-weight: 600;
+        }
+
+        /* Experience Slider */
+        .experience-slider-wrapper {
+            margin-top: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            background: #000;
+        }
+
+        .experience-slider {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+        }
+
+        .slider-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .slider-item {
+            position: absolute;
+            inset: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            overflow: hidden;
+        }
+
+        .slider-item.active {
+            opacity: 1;
+            z-index: 2;
+        }
+
+        .slider-item.prev-slide {
+            opacity: 0;
+            z-index: 1;
+        }
+
+  .slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+        @keyframes kenburns-1 {
+            0% {
+                transform: scale(1.0) translate(0, 0);
+            }
+
+            100% {
+                transform: scale(1.12) translate(-1%, -1%);
+            }
+        }
+
+        @keyframes kenburns-2 {
+            0% {
+                transform: scale(1.08) translate(2%, 1%);
+            }
+
+            100% {
+                transform: scale(1.0) translate(-2%, -1%);
+            }
+        }
+
+        @keyframes kenburns-3 {
+            0% {
+                transform: scale(1.12) translate(0, 2%);
+            }
+
+            100% {
+                transform: scale(1.02) translate(1%, -2%);
+            }
+        }
+
+        @keyframes kenburns-4 {
+            0% {
+                transform: scale(1.05) translate(-2%, 0);
+            }
+
+            100% {
+                transform: scale(1.1) translate(2%, -1%);
+            }
+        }
+
+        .slider-item::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.18);
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 1s ease;
+            pointer-events: none;
+        }
+
+        .slider-item.active::before {
+            opacity: 1;
+        }
+
+        .slider-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.18);
+            backdrop-filter: blur(8px);
+            border: 1.5px solid rgba(255, 255, 255, 0.4);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            color: #fff;
+            transition: all 0.3s ease;
+            z-index: 10;
+            opacity: 0;
+        }
+
+        .experience-slider:hover .slider-nav {
+            opacity: 1;
+        }
+
+        .slider-nav:hover {
+            background: linear-gradient(135deg, var(--primary-main), var(--accent-purple));
+            border-color: transparent;
+            transform: translateY(-50%) scale(1.12);
+            box-shadow: 0 6px 20px rgba(108, 72, 197, 0.5);
+        }
+
+        .slider-nav.prev {
+            left: 14px;
+        }
+
+        .slider-nav.next {
+            right: 14px;
+        }
+
+        .slider-counter {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(6px);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            pointer-events: none;
+        }
+
+        .slider-dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 0;
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(10px);
+        }
+
+        .slider-dot {
+            position: relative;
+            width: 36px;
+            height: 4px;
+            border-radius: 4px;
+            background: rgba(108, 72, 197, 0.2);
+            cursor: pointer;
+            border: none;
+            padding: 0;
+            overflow: hidden;
+            transition: background 0.3s ease;
+        }
+
+        .slider-dot.active::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0%;
+            background: linear-gradient(90deg, var(--primary-main), var(--accent-purple));
+            border-radius: 4px;
+            animation: dotProgress var(--dot-duration, 5s) linear forwards;
+        }
+
+        @keyframes dotProgress {
+            from {
+                width: 0%;
+            }
+
+            to {
+                width: 100%;
+            }
+        }
+
+        .slider-dot:hover {
+            background: rgba(108, 72, 197, 0.4);
+        }
+
+        /* Contact Section */
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.contact-card,
+.contact-highlight {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.contact-card h3,
+.contact-highlight h3 {
+    margin-bottom: 15px;
+}
+
+.contact-highlight p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #2563eb;
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+}
+.contact-info {
+    max-width: 600px;
+    width: 100%;
+}
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            background: var(--bg-primary);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            transition: var(--transition);
+            box-shadow: var(--shadow-xs);
+        }
+
+        .info-item:hover {
+            border-color: var(--accent-purple);
+            background: var(--bg-secondary);
+            transform: translateX(4px);
+        }
+
+        .info-icon {
+            color: var(--primary-main);
+            font-size: 28px;
+            min-width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .info-item h4 {
+            color: var(--primary-main);
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+
+        .info-item p {
+            color: var(--text-secondary);
+            margin: 0;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            background: var(--bg-primary);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 12px 16px;
+            color: var(--text-primary);
+            font-family: inherit;
+            margin-bottom: 16px;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: var(--accent-purple);
+            box-shadow: 0 0 0 3px rgba(108, 72, 197, 0.1);
+            outline: none;
+        }
+
+        .footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.footer-social a {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    color: #1e3a5f;
+    font-size: 20px;
+
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: #ffffff;
+    color: #1e3a5f;
+    transform: translateY(-3px);
+}        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            margin-top: 20px;
+        }
+
+        .social-link {
+            color: var(--accent-purple);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .social-link:hover {
+            color: var(--primary-main);
+            transform: translateY(-3px);
+        }
+
+        .social-btn {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+}
+
+.linkedin {
+    background: #0A66C2;
+}
+
+.instagram {
+        background: #374151;
+}
+
+        /* About Wrapper */
+        .about-wrapper {
+            display: flex;
+            gap: 50px;
+            align-items: flex-start;
+        }
+
+        .about-left {
+            flex: 2;
+        }
+
+        .about-right {
+            flex: 1;
+            text-align: center;
+        }
+
+        .about-right img {
+            width: 100%;
+            max-width: 260px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: none;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .education-box {
+            margin-top: 28px;
+            background: var(--bg-primary);
+            padding: 28px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-xs);
+        }
+
+        .education-box h3 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: var(--primary-main);
+            font-weight: 700;
+        }
+
+        .edu-header {
+            display: flex;
+            justify-content: space-between;
+            margin: 16px 0 6px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        .edu-detail {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-top: 12px;
+        }
+
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hero-title {
+                font-size: 44px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+                letter-spacing: 1px;
+            }
+
+            .hero-role {
+                font-size: 14px;
+            }
+
+            .profile-image {
+                width: 280px;
+                height: 320px;
+                margin: 0 auto;
+            }
+
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-wrapper {
+                flex-direction: column;
+            }
+
+            .about-right {
+                margin-top: 20px;
+            }
+
+            .section-title {
+                font-size: 36px;
+                margin-bottom: 40px;
+            }
+
+            .competencies-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+
+            .nav-container {
+                padding: 0 20px;
+            }
+
+            .nav-menu {
+                display: none;
+                gap: 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu.active {
+                display: flex;
+                position: fixed;
+                left: 0;
+                top: 70px;
+                flex-direction: column;
+                background: white;
+                backdrop-filter: blur(20px);
+                width: 100%;
+                padding: 20px 0;
+                box-shadow: var(--shadow-md);
+            }
+
+            .nav-menu.active li {
+                padding: 12px 20px;
+                border-bottom: 1px solid var(--border-color);
+            }
+
+            .hero-title {
+                font-size: 32px;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+                letter-spacing: 1px;
+            }
+
+            .hero-description {
+                font-size: 15px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .skills-grid,
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 28px;
+                margin-bottom: 30px;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .competencies-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about-left {
+                flex: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .nav-container {
+                height: 60px;
+                padding: 0 16px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .hero {
+                padding-top: 60px;
+            }
+
+            .hero-title {
+                font-size: 28px;
+            }
+
+            .hero-subtitle {
+                font-size: 14px;
+            }
+
+            .profile-image {
+                width: 200px;
+                height: 240px;
+            }
+
+            .section-title {
+                font-size: 24px;
+            }
+
+            section {
+                padding: 40px 0;
+            }
+
+            .about-stats {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .hero-stats {
+                gap: 12px;
+                border-top: 1px solid var(--border-color);
+                padding-top: 20px;
+            }
+
+            .stat-number {
+                font-size: 22px;
+            }
+
+            .stat-label {
+                font-size: 0.75rem;
+            }
+        }
+
+        .active-menu {
+            display: flex !important;
+        }
+
+        /* ========== ENHANCED ABOUT SECTION STYLES ========== */
+
+        /* About Text Card */
+        .about-text-card {
+            background: white;
+            border-radius: 28px;
+            padding: 32px;
+            margin-bottom: 28px;
+            position: relative;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(108, 72, 197, 0.1);
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: 20px;
+            right: 24px;
+            opacity: 0.15;
+        }
+
+        .about-description {
+            color: #3a3a5a;
+            line-height: 1.7;
+            margin-bottom: 18px;
+            font-size: 1rem;
+        }
+
+        .about-description .highlight {
+            color: #6C48C5;
+            font-weight: 600;
+            background: linear-gradient(120deg, rgba(108, 72, 197, 0.08) 0%, rgba(108, 72, 197, 0.02) 100%);
+            padding: 2px 6px;
+            border-radius: 8px;
+        }
+
+        /* Education Box Enhanced */
+        .education-box {
+            background: white;
+            border-radius: 28px;
+            padding: 28px;
+            margin-bottom: 28px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+            border: 1px solid rgba(108, 72, 197, 0.1);
+        }
+
+        .edu-header-section {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 28px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid rgba(108, 72, 197, 0.15);
+        }
+
+        .edu-icon {
+            color: var(--primary-main);
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 36px;
+            height: 36px;
+            flex-shrink: 0;
+        }
+
+        .edu-header-section h3 {
+            font-size: 26px;
+            color: #1230AE;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        /* Education Timeline */
+        .edu-timeline {
+            margin-bottom: 28px;
+        }
+
+        .edu-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .edu-year-badge {
+            background: linear-gradient(135deg, #1230AE, #6C48C5);
+            padding: 8px 16px;
+            border-radius: 40px;
+            color: white;
+            font-weight: 600;
+            font-size: 0.85rem;
+            white-space: nowrap;
+            box-shadow: 0 4px 12px rgba(18, 48, 174, 0.2);
+        }
+
+        .edu-content h4 {
+            font-size: 20px;
+            color: #1a1a2e;
+            margin-bottom: 4px;
+        }
+
+        .edu-major {
+            color: #6C48C5;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .edu-gpa {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .gpa-label {
+            background: #f0edf8;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #6C48C5;
+        }
+
+        .gpa-value {
+            font-size: 22px;
+            font-weight: 800;
+            color: #1230AE;
+        }
+
+        .gpa-max {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .cumlaude {
+            background: linear-gradient(135deg, #C68FE6, #6C48C5);
+            padding: 4px 12px;
+            border-radius: 20px;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        /* Detail Cards Grid */
+        .edu-details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .detail-card {
+            background: #fefbff;
+            border-radius: 20px;
+            padding: 16px;
+            display: flex;
+            gap: 12px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(108, 72, 197, 0.08);
+        }
+
+        .detail-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(108, 72, 197, 0.2);
+            box-shadow: 0 8px 20px rgba(108, 72, 197, 0.1);
+        }
+
+        .detail-icon {
+            font-size: 28px;
+        }
+
+        .detail-text strong {
+            display: block;
+            color: #1230AE;
+            margin-bottom: 6px;
+            font-size: 0.85rem;
+        }
+
+        .detail-text p {
+            font-size: 0.8rem;
+            color: #5a5a7a;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* Interests / Core Strengths */
+        .interests-box {
+            background: linear-gradient(135deg, rgba(18, 48, 174, 0.03), rgba(108, 72, 197, 0.05));
+            border-radius: 28px;
+            padding: 20px 24px;
+            border: 1px solid rgba(108, 72, 197, 0.12);
+        }
+
+        .interests-box h4 {
+            color: #1230AE;
+            font-size: 16px;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .interests-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .interest-tag {
+            background: white;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #6C48C5;
+            border: 1px solid rgba(108, 72, 197, 0.2);
+            transition: all 0.2s ease;
+            cursor: default;
+        }
+
+        .interest-tag:hover {
+            background: #6C48C5;
+            color: white;
+            border-color: #6C48C5;
+            transform: scale(1.02);
+        }
+
+        /* Profile Card - Right Side */
+        .about-right {
+            position: relative;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .profile-card-inner {
+            position: relative;
+        }
+
+        .profile-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            z-index: 2;
+            background: linear-gradient(135deg, var(--primary-main), var(--accent-purple));
+            padding: 6px 14px;
+            border-radius: 30px;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(18, 48, 174, 0.3);
+        }
+
+        .profile-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            height: 280px;
+        }
+
+        .profile-image-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .profile-card:hover .profile-image-wrapper img {
+            transform: scale(1.05);
+        }
+
+        .profile-overlay {
+            display: none;
+        }
+
+        .profile-info {
+            padding: 24px 20px;
+            text-align: center;
+        }
+
+        .profile-info h3 {
+            font-size: 1.1rem;
+            color: var(--primary-main);
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+
+        .profile-info h3 {
+            font-size: 20px;
+            color: #1230AE;
+            margin-bottom: 4px;
+        }
+
+        .profile-title {
+            color: #6C48C5;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        .profile-contact-icons {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .profile-info h3 {
+            font-size: 1.1rem;
+            color: var(--primary-main);
+            margin-bottom: 4px;
+            font-weight: 700;
+        }
+
+        .profile-title {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+
+        .contact-chip {
+            background: #f8f5ff;
+            padding: 6px 12px;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            color: #4a4a6a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .profile-stats {
+            display: flex;
+            justify-content: space-around;
+            padding: 16px 20px;
+            background: linear-gradient(135deg, #fefbff, #f5f0fa);
+            border-top: 1px solid rgba(108, 72, 197, 0.1);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 22px;
+            font-weight: 800;
+            color: #1230AE;
+        }
+
+        .stat-label {
+            font-size: 0.7rem;
+            color: #6C48C5;
+            font-weight: 500;
+        }
+
+        .stat-divider {
+            width: 1px;
+            background: rgba(108, 72, 197, 0.2);
+        }
+
+        /* Responsive */
+        @media (max-width: 992px) {
+            .edu-details-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .edu-item {
+                flex-direction: column;
+            }
+
+            .edu-year-badge {
+                align-self: flex-start;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-text-card {
+                padding: 24px;
+            }
+
+            .profile-stats {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .stat-divider {
+                display: none;
+            }
+
+            .profile-image-wrapper {
+                height: 240px;
+            }
+        }
+
+        .contact-chip-link {
+            text-decoration: none;
+            display: block;
+            transition: transform 0.2s ease;
+        }
+
+        .contact-chip-link:hover {
+            transform: translateX(4px);
+        }
+
+        .contact-chip {
+            background: #f8f5ff;
+            padding: 8px 16px;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            color: #4a4a6a;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: 1px solid rgba(108, 72, 197, 0.15);
+        }
+
+        .contact-chip:hover {
+            background: linear-gradient(135deg, #6C48C5, #1230AE);
+            color: white;
+            border-color: transparent;
+            box-shadow: 0 4px 12px rgba(108, 72, 197, 0.3);
+        }
+
+        .contact-chip:hover span {
+            filter: brightness(0) invert(1);
+        }
+
+        .contact-chip span {
+            font-size: 1rem;
+            transition: all 0.2s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">✦ Portofolio</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Certification</a></li>
+                <li><a href="#experience" class="nav-link">Journey</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Siti Salsabila Muthmainnah</h1>
+                <div class="hero-subtitle">HR & Administration Specialist</div>
+                <div class="hero-role">Industrial Engineer | HR Development Professional</div>
+                <p class="hero-description">Dedicated HR professional with 2+ years of experience in HR administration,
+                    training management, and operational efficiency. Proven track record in employee development,
+                    recruitment, and process optimization across manufacturing and education sectors.</p>
+              <div class="hero-buttons">
+    <a href="./cv/CV Siti Salsabila Muthmainnah.pdf" download class="btn btn-primary">
+        <i class="fas fa-download"></i> Download CV
+    </a>
+
+    <a href="https://www.linkedin.com/in/siti-salsabila-muthmainnah-304870221/"
+       target="_blank"
+       class="social-btn linkedin">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+</div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Companies</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image">
+                    <img src="./images/pasfoto.jpeg" alt="Siti Salsabila">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Profile</h2>
+
+            <div class="about-wrapper">
+                <!-- LEFT SIDE -->
+                <div class="about-left">
+                    <div class="about-text-card">
+                        <h3 style="color: var(--primary-main); margin-bottom: 16px; font-size: 1.2rem;">About Me</h3>
+                        <p class="about-description">
+                            Results-driven HR & Administration professional with a background in Industrial Engineering.
+                            Specialized in <span class="highlight">HR development, training management, and operational
+                                administration</span> across diverse industries including manufacturing and education.
+                        </p>
+                        <p class="about-description">
+                            Strong expertise in <span class="highlight">employee onboarding, training administration,
+                                recruitment coordination</span>, and process optimization. Proven ability to manage
+                            multiple HR initiatives while maintaining detailed documentation and compliance standards.
+                            Recognized for improving operational efficiency and creating positive workplace
+                            environments.
+                        </p>
+                    </div>
+
+                    <!-- PROFESSIONAL COMPETENCIES -->
+                    <div class="competencies-box">
+                        <h3 style="color: var(--primary-main); margin-bottom: 20px; font-size: 1.1rem;">Core
+                            Competencies</h3>
+                        <div class="competencies-grid">
+                            <div class="competency-item">
+                                <div class="competency-icon"><i class="fas fa-users"></i></div>
+                                <div class="competency-text">
+                                    <strong>HR Administration</strong>
+                                    <p>Employee data management, documentation, compliance</p>
+                                </div>
+                            </div>
+                            <div class="competency-item">
+                                <div class="competency-icon"><i class="fas fa-clipboard-list"></i></div>
+                                <div class="competency-text">
+                                    <strong>Training Management</strong>
+                                    <p>Training admin, evaluation, certification tracking</p>
+                                </div>
+                            </div>
+                            <div class="competency-item">
+                                <div class="competency-icon"><i class="fas fa-chart-bar"></i></div>
+                                <div class="competency-text">
+                                    <strong>Data Analysis</strong>
+                                    <p>Excel, SPSS, reporting, performance tracking</p>
+                                </div>
+                            </div>
+                            <div class="competency-item">
+                                <div class="competency-icon"><i class="fas fa-arrows-rotate"></i></div>
+                                <div class="competency-text">
+                                    <strong>Process Improvement</strong>
+                                    <p>Workflow optimization, efficiency enhancement</p>
+                                </div>
+                            </div>
+                            <div class="competency-item">
+                                <div class="competency-icon"><i class="fas fa-briefcase"></i></div>
+                                <div class="competency-text">
+                                    <strong>Recruitment Support</strong>
+                                    <p>CV screening, scheduling, candidate coordination</p>
+                                </div>
+                            </div>
+                            <div class="competency-item">
+                                <div class="competency-icon"><i class="fas fa-building"></i></div>
+                                <div class="competency-text">
+                                    <strong>Office Management</strong>
+                                    <p>MS Office, Google Workspace, SAP systems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EDUCATION SECTION -->
+                    <div class="education-box">
+                        <div class="edu-header-section">
+                            <span class="edu-icon"><i class="fas fa-graduation-cap"></i></span>
+                            <h3>Education & Certification</h3>
+                        </div>
+
+                        <div class="edu-timeline">
+                            <div class="edu-item">
+                                <div class="edu-year-badge">2019 — 2023</div>
+                                <div class="edu-content">
+                                    <h4>Bachelor of Industrial Engineering</h4>
+                                    <p class="edu-major">Syiah Kuala University, Banda Aceh</p>
+                                    <div class="edu-gpa">
+                                        <span class="gpa-label">GPA</span>
+                                        <span class="gpa-value">3.65</span>
+                                        <span class="gpa-max">/ 4.00</span>
+                                        <span class="cumlaude">Cum Laude</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="final-project-section">
+                            <div class="final-project-title">
+                                <i class="fas fa-star"></i> Final Project (Tugas Akhir)
+                            </div>
+
+                            <div class="final-project-content">
+                                <h5><i class="fas fa-book"></i> Pengukuran Beban Kerja Mental Operator Air Traffic
+                                    Controller (ATC)</h5>
+                                <p class="final-project-subtitle">Metode SWAT dan NASA-TLX</p>
+                                <p class="final-project-subtitle"
+                                    style="margin-top: 8px; font-style: normal; color: var(--text-light);">📍 Studi
+                                    Kasus: Perum LPPNPI (AirNav Indonesia) Cabang Banda Aceh</p>
+                            </div>
+
+                            <div class="focus-areas-heading">
+                                <i class="fas fa-compass"></i> Focus Areas
+                            </div>
+                            <div class="focus-areas-grid">
+                                <div class="focus-item">
+                                    <i class="fas fa-cogs"></i>
+                                    <p class="focus-item-text">Administrasi Operasional</p>
+                                </div>
+                                <div class="focus-item">
+                                    <i class="fas fa-users"></i>
+                                    <p class="focus-item-text">Human Resource</p>
+                                </div>
+                                <div class="focus-item">
+                                    <i class="fas fa-database"></i>
+                                    <p class="focus-item-text">Pengelolaan Data</p>
+                                </div>
+                                <div class="focus-item">
+                                    <i class="fas fa-folder"></i>
+                                    <p class="focus-item-text">Manajemen Dokumen & Arsip</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE - PROFILE CARD -->
+                <div class="about-right">
+                    <div class="profile-card">
+                        <div class="profile-card-inner">
+                            <div class="profile-badge">HR & Admin Specialist</div>
+                            <div class="profile-image-wrapper">
+                                <img src="images/pasfoto.jpeg" alt="Siti Salsabila Muthmainnah">
+                            </div>
+                            <div class="profile-info">
+                                <h3>Siti Salsabila Muthmainnah</h3>
+                                <p class="profile-title">Industrial Engineer Graduate<br>HR Development Specialist</p>
+
+                                <div
+                                    style="margin-top: 20px; padding: 16px 0; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+                                    <div style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 4px;">
+                                        CURRENT POSITION</div>
+                                    <div style="font-weight: 600; color: var(--primary-main);">HR Development Staff
+                                        (Intern)</div>
+                                    <div style="font-size: 0.85rem; color: var(--text-light); margin-top: 2px;">PT Pupuk
+                                        Iskandar Muda</div>
+                                </div>
+
+                                <div style="margin-top: 20px;">
+                                    <div class="contact-chips">
+                                        <a href="mailto:siti.salsabila2001@gmail.com" style="text-decoration: none;">
+                                            <div class="contact-chip">📧 Email</div>
+                                        </a>
+                                        <a href="https://maps.google.com/?q=Banda+Aceh,+Indonesia" target="_blank"
+                                            style="text-decoration: none;">
+                                            <div class="contact-chip">📍 Banda Aceh</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Core Skills</h2>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-brands fa-microsoft"></i></div>
+                    <h3>Microsoft Office</h3>
+                    <p>Word, Excel, PowerPoint, Visio, Outlook</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-brands fa-google"></i></div>
+                    <h3>Google Workspace</h3>
+                    <p>Docs, Sheets, Drive, Calendar</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>SPSS & Minitab</h3>
+                    <p>Statistical Analysis & Data Processing</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>SAP</h3>
+                    <p>Enterprise Resource Planning</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-cube"></i></div>
+                    <h3>SolidWorks</h3>
+                    <p>3D CAD Design & Modeling</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-palette"></i></div>
+                    <h3>Canva & Video Editor</h3>
+                    <p>Graphic Design & Content Creation</p>
+                </div>
+
+            </div>
+            <section id="projects" class="projects">
+                <div class="container">
+                    <h2 class="section-title">Certifications & Achievements</h2>
+
+                    <div class="projects-grid">
+
+       <a href="images/certification/Sertfikat Sertifikasi Administrasi Perkantoran (1).pdf" target="_blank" class="project-link">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="images/certification/certificate-blk.jpeg" alt="Administrative Office Certification">
+        </div>
+
+        <div class="project-content">
+            <h3>Administrative Office Certification</h3>
+            <p>BLK Banda Aceh (Vocational Training Center) - BNSP Certified</p>
+
+            <div class="project-tags">
+                <span class="tag">2024 - 2027</span>
+                <span class="tag">Ongoing</span>
+            </div>
+        </div>
+    </div>
+</a>
+<a href="images/certification/certificate-komputer full.jpg" target="_blank" class="project-link">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="images/certification/certificate-komputer.jpg" alt="Computer Skills Certificate">
+        </div>
+
+        <div class="project-content">
+            <h3>Computer Skills Certificate</h3>
+            <p>SkillAcademy - Professional IT Training Program</p>
+
+            <div class="project-tags">
+                <span class="tag">Professional</span>
+                <span class="tag">Completed</span>
+            </div>
+        </div>
+    </div>
+</a>
+<a href="images/certification/Sertifikat Siti Salsabila Muthmainnah - PPH.pdf" target="_blank" class="project-link">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="images/certification/certicificate-halal.jpeg" alt="Halal Product Certification">
+        </div>
+
+        <div class="project-content">
+            <h3>Halal Product Certification</h3>
+            <p>LP3H Syiah Kuala University - Product Certification</p>
+
+            <div class="project-tags">
+                <span class="tag">2023</span>
+                <span class="tag">Verified</span>
+            </div>
+        </div>
+    </div>
+</a>
+                       <a href="images/certification/certificate-top5 finalist.jpeg" target="_blank" class="project-link">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="images/certification/certificate-top5 finalist.jpeg"
+                 alt="Top 5 Finalist Nasional Business Plan Competition">
+        </div>
+
+        <div class="project-content">
+            <h3>Top 5 Finalist Nasional Business Plan Competition</h3>
+
+            <p style="text-align: justify;">
+                Innovator and Entrepreneur Festival (IE-Fest)
+            </p>
+
+            <div class="project-tags">
+                <span class="tag">2022</span>
+                <span class="tag">Verified</span>
+            </div>
+        </div>
+    </div>
+</a>
+                        <div class="project-card">
+                            <div class="project-content">
+                                <h3>TOEFL English Language Test</h3>
+                                <p>English Proficiency Assessment - Prediction Score</p>
+                                <div class="project-tags">
+                                    <span class="tag">Score: 583</span>
+                                    <span class="tag">Qualified</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+            <section id ="projects" class="projects">
+                <!-- FIGMA PROTOTYPE SECTION -->
+<div class="prototype-section">
+    <div class="final-project-title">
+        <i class="fab fa-figma"></i> UI/UX Prototype
+    </div>
+
+    <div class="final-project-content">
+        <h5>
+            <i class="fas fa-mobile-alt"></i>
+           Design Interface OWACE
+        </h5>
+
+        <p class="final-project-subtitle">
+            Designed an interactive mobile application prototype using Figma
+            for employee management, onboarding, training, and performance monitoring.
+        </p>
+        <br>
+
+        <a href="https://www.figma.com/make/cmJEhqhX5BMzCpPk7qkkA6/Business-Expense-Management-Tool?code-node-id=0-9&p=f&t=mWpqvsqaeLTrvBUA-0&fullscreen=1"
+           target="_blank"
+           class="prototype-btn">
+            <i class="fas fa-arrow-up-right-from-square"></i>
+            View Prototype
+        </a>
+    </div>
+</div>
+</section>
+
+            <section id="experience" class="experience">
+                <div class="container">
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="timeline">
+
+                        <!-- PIM -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>HR Development & Management Staff (Intern)</h3>
+                                <div class="company">PT Pupuk Iskandar Muda · Lhokseumawe, Aceh</div>
+                                <div class="period">June 2024 – Present</div>
+                                <p>
+                                    • <strong>Training Administration:</strong> Managed end-to-end training programs
+                                    including registration, attendance tracking, certification processing, evaluation
+                                    analysis, and comprehensive reporting<br>
+                                    • <strong>Document Management:</strong> Organized and archived training materials
+                                    and employee records systematically using proper filing protocols<br>
+                                    • <strong>Recruitment Support:</strong> Coordinated complete internship recruitment
+                                    cycle including job posting, CV screening, interview scheduling, and offer
+                                    processing<br>
+                                    • <strong>Budget Monitoring:</strong> Recorded and tracked training budgets,
+                                    prepared detailed financial reports, and analyzed evaluation data for program
+                                    effectiveness<br>
+                                    • <strong>HR Administration:</strong> Supported daily HR operations including
+                                    attendance monitoring, payroll coordination, and employee documentation
+                                </p>
+                                <div class="experience-slider-wrapper">
+                                    <div class="experience-slider" data-slider="pim" data-duration="5000">
+                                        <button class="slider-nav prev" onclick="moveSlide('pim',-1)">‹</button>
+                                        <button class="slider-nav next" onclick="moveSlide('pim', 1)">›</button>
+                                        <div class="slider-counter" id="counter-pim">1 / 3</div>
+                                        <div class="slider-container">
+                                            <div class="slider-item"><img src="./images/experience/1.jpeg" alt="PIM 1">
+                                            </div>
+                                            <div class="slider-item"><img src="./images/experience/2.jpeg" alt="PIM 2">
+                                            </div>
+                                            <div class="slider-item"><img src="./images/experience/3.jpg" alt="PIM 3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-dots" id="dots-pim"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Edupedia -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>HR Administration & Customer Service Specialist</h3>
+                                <div class="company">PT Edukasi Pendidikan Indonesia (Bimbel Edupedia) · Banda Aceh
+                                </div>
+                                <div class="period">January – May 2025</div>
+                                <p>
+                                    • <strong>Student Services:</strong> Provided comprehensive information services to
+                                    prospective students and managed complete student registration processes<br>
+                                    • <strong>Data Management:</strong> Maintained accurate employee and student
+                                    administrative database with proper data integrity and confidentiality<br>
+                                    • <strong>Program Coordination:</strong> Collaborated with management and teaching
+                                    staff to develop curriculum programs, create schedules, and plan budgets<br>
+                                    • <strong>Financial Operations:</strong> Prepared financial reports, generated
+                                    invoices, tracked payment records, and verified participant billing data<br>
+                                    • <strong>Quality Assurance:</strong> Ensured compliance with administrative
+                                    standards and proper documentation procedures
+                                </p>
+                                <div class="experience-slider-wrapper">
+                                    <div class="experience-slider" data-slider="edupedia" data-duration="5000">
+                                        <button class="slider-nav prev" onclick="moveSlide('edupedia',-1)">‹</button>
+                                        <button class="slider-nav next" onclick="moveSlide('edupedia', 1)">›</button>
+                                        <div class="slider-counter" id="counter-edupedia">1 / 3</div>
+                                        <div class="slider-container">
+                                            <div class="slider-item"><img src="./images/experience/edupedia-1.jpeg"
+                                                    alt="Edupedia 1"></div>
+                                            <div class="slider-item"><img src="./images/experience/edupedia-2.jpeg"
+                                                    alt="Edupedia 2"></div>
+                                            <div class="slider-item"><img src="./images/experience/edupedia-3.jpeg"
+                                                    alt="Edupedia 3"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-dots" id="dots-edupedia"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DJKN -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Administrative Staff (State Receivables Management)</h3>
+                                <div class="company">DJKN (Direktorat Jenderal Kekayaan Negara) Kemenekeu · Banda Aceh
+                                </div>
+                                <div class="period">April – June 2024</div>
+                                <p>
+                                    • <strong>Document Processing:</strong> Managed and validated 100+ government
+                                    receivable documents with meticulous attention to accuracy and detail<br>
+                                    • <strong>Data Entry & Verification:</strong> Performed data input,
+                                    cross-verification, and quality control on sensitive financial documents<br>
+                                    • <strong>Records Management:</strong> Organized, archived, and distributed
+                                    documents according to governmental procedures with strict confidentiality
+                                    compliance<br>
+                                    • <strong>Reporting Support:</strong> Assisted in generating administrative reports
+                                    and document verification processes to improve operational efficiency
+                                </p>
+                                <div class="experience-slider-wrapper">
+                                    <div class="experience-slider" data-slider="djkn" data-duration="5000">
+                                        <button class="slider-nav prev" onclick="moveSlide('djkn',-1)">‹</button>
+                                        <button class="slider-nav next" onclick="moveSlide('djkn', 1)">›</button>
+                                        <div class="slider-counter" id="counter-djkn">1 / 3</div>
+                                        <div class="slider-container">
+                                            <div class="slider-item"><img src="./images/experience/djkn-1.jpeg"
+                                                    alt="DJKN 1"></div>
+                                            <div class="slider-item"><img src="./images/experience/djkn-2.jpeg"
+                                                    alt="DJKN 2"></div>
+                                            <div class="slider-item"><img src="./images/experience/djkn-3.jpeg"
+                                                    alt="DJKN 3"></div>
+                                                    <div class="slider-item"><img src="./images/experience/djkn-4.jpeg"
+                                                    alt="DJKN 4"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-dots" id="dots-djkn"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Lab-->
+                         <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>Integrated Practicum Laboratory (Industrial Engineering, Syiah Kuala University)</h3>
+                                <div class="company">Secretary of Work System and Production Design Laboratory
+                                </div>
+                                <div class="period">January 2023 – June 2023 | Aceh, Indonesia</div>
+                                <p>
+                                    • Managed laboratory administration, including practicum module preparation, document filing, scheduling, attendance tracking, inventory recording, and student assessment recapitulation.<br>
+                                    • Optimized database management and reporting processes using Microsoft Excel and Google Workspace.<br>
+                                    • Coordinated and supported practical sessions for more than 100 students, ensuring efficient administration, accurate documentation, and smooth laboratory operations.
+                                </p>
+                                <div class="experience-slider-wrapper">
+                                    <div class="experience-slider" data-slider="lab" data-duration="5000">
+                                        <button class="slider-nav prev" onclick="moveSlide('lab',-1)">‹</button>
+                                        <button class="slider-nav next" onclick="moveSlide('lab', 1)">›</button>
+                                        <div class="slider-counter" id="counter-lab">1 / 3</div>
+                                        <div class="experience-slider" data-slider="lab" data-duration="5000">
+    <button class="slider-nav prev" onclick="moveSlide('lab', -1)">‹</button>
+    <button class="slider-nav next" onclick="moveSlide('lab', 1)">›</button>
+
+    <div class="slider-counter" id="counter-lab">1 / 4</div>
+
+    <div class="slider-container">
+        <div class="slider-item">
+            <img src="./images/experience/lab-3.jpeg" alt="Lab 1">
+        </div>
+
+        <div class="slider-item">
+            <img src="./images/experience/lab-1.jpeg" alt="Lab 2">
+        </div>
+
+        <div class="slider-item">
+            <img src="./images/experience/lab-2.jpeg" alt="Lab 3">
+        </div>
+
+        
+    </div>
+</div>
+
+<div class="slider-dots" id="dots-lab"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <!--Semen Padang-->
+<div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h3>PT Semen Padang</h3>
+                                <div class="company">Inventory Management Spare Parts Intern
+                                </div>
+                                <div class="period">July 2022 – August 2022 | Padang, Indonesia</div>
+                              <p>
+                                    • <strong>Inventory Administration:</strong> Managed stock records, warehouse inventory administration, and transfer document filing using SAP.
+<br>
+                                    • <strong>Stock Analysis:</strong> Conducted stock-taking analysis and supported material flow management to ensure operational inventory accuracy.<br>
+                                    • <strong>Cross-Functional Coordination:</strong> Collaborated with related departments in inventory data management and goods distribution processes.<br>
+                                    • <strong>Procurement & Documentation Support:</strong> Assisted procurement administration activities and maintained control of more than 100 operational documents to support efficient warehouse operations.
+                                </p>
+                                <div class="experience-slider-wrapper">
+                                    <div class="experience-slider" data-slider="semen" data-duration="5000">
+                                        <button class="slider-nav prev" onclick="moveSlide('semen',-1)">‹</button>
+                                        <button class="slider-nav next" onclick="moveSlide('semen', 1)">›</button>
+                                        <div class="slider-counter" id="counter-semen">1 / 3</div>
+                                        <div class="slider-container">
+                                            <div class="slider-item"><img src="./images/experience/semen-1.jpg"
+                                                    alt="DJKN 1"></div>
+                                            <div class="slider-item"><img src="./images/experience/semen-2.jpg"
+                                                    alt="DJKN 2"></div>
+                                            <div class="slider-item"><img src="./images/experience/semen-3.jpg"
+                                                    alt="DJKN 3"></div>
+                                                    <div class="slider-item"><img src="./images/experience/semen-4.jpg"
+                                                    alt="DJKN 4"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-dots" id="dots-semen"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                </div>
+            </section>
+            </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+
+        <div class="contact-content">
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+
+                <div class="contact-card">
+                    <h3>Let's Connect!</h3>
+                    <p>
+                        I'm always open to discussing new opportunities,
+                        professional collaborations, and HR-related projects.
+                        Feel free to reach out through any of the channels below.
+                    </p>
+                </div>
+                <br>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>
+                            <a href="mailto:siti.salsabila2001@gmail.com" class="contact-link">
+                              siti.salsabila2001@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>
+                            <a href="https://wa.me/6282370100209" target="_blank" class="contact-link">
+                                +62 823-7010-0209
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>
+                            <a href="https://maps.google.com/?q=Banda+Aceh+Indonesia"
+                                target="_blank"
+                                class="contact-link">
+                                Banda Aceh, Indonesia
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="contact-highlight">
+                <h3>Ready to Collaborate?</h3>
+
+                <p>
+                    As an Industrial Engineering graduate with experience in
+                    Human Resources, Administration, and Training Management,
+                    I am passionate about creating efficient work processes and
+                    supporting employee development initiatives.
+                </p>
+
+                <p>
+                    Whether you're looking for an HR professional, administrative
+                    specialist, or project collaborator, I'd be delighted to connect.
+                </p>
+
+                <div class="contact-buttons">
+                    <a href="mailto:siti.salsabila2001@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+
+                    <a href="https://wa.me/6282370100209" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+          <footer class="footer">
+    <div class="container">
+        <p>© 2026 Siti Salsabila Muthmainnah. All rights reserved.</p>
+
+        <div class="footer-social">
+
+            <a href="https://www.linkedin.com/in/siti-salsabila-muthmainnah-304870221/"
+                target="_blank"
+                aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://www.instagram.com/ssbilamthmnnah_?igsh=MXUycDh2Yjg4YnRzMQ%3D%3D&utm_source=qr"
+                target="_blank"
+                aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="mailto:siti.salsabila2001@gmail.com"
+                aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+    </div>
+</footer>
+
+            <script>
+                const hamburger = document.getElementById('hamburger');
+                const navMenu = document.getElementById('navMenu');
+                hamburger.addEventListener('click', () => {
+                    navMenu.classList.toggle('active');
+                    document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+                });
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    });
+                });
+                document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const target = document.querySelector(this.getAttribute('href'));
+                        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    });
+                });
+                const form = document.getElementById('contactForm');
+                if (form) {
+                    form.addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        alert('✨ Thanks! Your creative spark has been sent. I’ll reach out within 24h.');
+                        form.reset();
+                    });
+                }
+            </script>
+            <script src="slider.js"></script>
+</body>
+
+</html>
